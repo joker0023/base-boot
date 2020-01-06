@@ -8,7 +8,6 @@ public class PageCtrl {
 
 	@RequestMapping("/page")
 	public String page(String name) {
-		System.out.println("page in, name: " + name);
 		return "page.html";
 	}
 }
