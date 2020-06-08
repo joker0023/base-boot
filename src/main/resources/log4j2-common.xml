@@ -16,9 +16,10 @@
     	</RollingFile>
     </Appenders>
     <Loggers>
-        <Root level="INFO">
+        <Root level="WARN">
             <AppenderRef ref="LogFile" />
         </Root>
+        <Logger name="com.jokerstation" level="INFO" additivity="true"></Logger>
         <Logger name="org" level="WARN" additivity="true">
         </Logger>
     </Loggers>
