@@ -2,13 +2,13 @@ package com.jokerstation.common.pojo;
 
 import java.io.Serializable;
 
-import javax.persistence.Id;
+//import javax.persistence.Id;
 
 public class Item implements Serializable {
 
 	private static final long serialVersionUID = 8318025688310322727L;
 
-	@Id
+//	@Id
 	private Long id;
 	
 	private String name;

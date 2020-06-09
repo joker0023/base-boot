@@ -17,15 +17,15 @@ public class CommonCtrl {
 	
 	private static Logger logger = LoggerFactory.getLogger(CommonCtrl.class);
 	
-	@Autowired
-	private ItemMapper itemMapper;
-
+//	@Autowired
+//	private ItemMapper itemMapper;
+//
 	@RequestMapping("/test")
 	public String test() {
-		logger.debug("debug log test");
-		logger.info("info log test");
-		logger.warn("warn log test");
-		logger.error("error log test");
+//		logger.debug("debug log test");
+//		logger.info("info log test");
+//		logger.warn("warn log test");
+//		logger.error("error log test");
 		return "success";
 	}
 }
