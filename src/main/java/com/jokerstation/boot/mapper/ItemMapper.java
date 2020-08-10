@@ -1,11 +1,9 @@
-package com.jokerstation.common.mapper;
+package com.jokerstation.boot.mapper;
 
 import java.util.List;
 
 //import org.apache.ibatis.annotations.Param;
 //import org.apache.ibatis.annotations.Select;
-
-import com.jokerstation.common.pojo.Item;
 
 //import tk.mybatis.mapper.common.Mapper;
 

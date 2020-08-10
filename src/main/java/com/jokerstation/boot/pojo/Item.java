@@ -1,4 +1,4 @@
-package com.jokerstation.common.pojo;
+package com.jokerstation.boot.pojo;
 
 import java.io.Serializable;
 
