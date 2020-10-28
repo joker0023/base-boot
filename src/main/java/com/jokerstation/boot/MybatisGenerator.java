@@ -23,8 +23,7 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 public class MybatisGenerator {
 	
 	public static void main(String[] args) {
-		 String projectPath = System.getProperty("user.dir");
-		 System.out.println(projectPath);
+		generate();
 	}
 
 	public static String scanner(String tip) {
@@ -35,11 +34,11 @@ public class MybatisGenerator {
         if (scanner.hasNext()) {
             String ipt = scanner.next();
             if (StringUtils.isNotBlank(ipt)) {
-            	scanner.close();
+//            	scanner.close();
                 return ipt;
             }
         }
-        scanner.close();
+//        scanner.close();
         throw new MybatisPlusException("请输入正确的" + tip + "！");
     }
 	
@@ -129,13 +128,13 @@ public class MybatisGenerator {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("你自己的父类实体,没有就不用设置!");
+//        strategy.setSuperEntityClass("");
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
         // 公共父类
-        strategy.setSuperControllerClass("你自己的父类控制器,没有就不用设置!");
+//        strategy.setSuperControllerClass("你自己的父类控制器,没有就不用设置!");
         // 写于父类中的公共字段
-        strategy.setSuperEntityColumns("id");
+//        strategy.setSuperEntityColumns("id");
         strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
