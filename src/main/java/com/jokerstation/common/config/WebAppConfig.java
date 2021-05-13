@@ -1,4 +1,4 @@
-package com.jokerstation.boot.config;
+package com.jokerstation.common.config;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;

@@ -4,7 +4,7 @@
 cd `dirname $0`
 
 #变量定义
-APP_NAME='base-boot'
+APP_NAME=@project.name@
 SERVICEAPP_NAME=${APP_NAME}'.jar'
 SERVICEAPP_DEPHOME='/data/webapps/'${APP_NAME}
 SERVICEAPP_LOGHOME='/data/logs/'${APP_NAME}

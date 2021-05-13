@@ -2,7 +2,7 @@
 <Configuration status="WARN">
     <properties>
         <property name="LOG_HOME">/data/logs</property>
-        <property name="APP_NAME">base-boot</property>
+        <property name="APP_NAME">@project.name@</property>
     </properties>
 
     <Appenders>

@@ -1,4 +1,4 @@
-package com.jokerstation.boot;
+package com.jokerstation.common;
 
 import java.util.ArrayList;
 import java.util.List;
